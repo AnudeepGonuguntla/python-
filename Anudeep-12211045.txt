@@ -1,0 +1,18 @@
+import random
+min = 1
+max = 6
+choice=str(input("enter your choice: "))
+
+#enter start to play
+while choice =="start" :
+    user_throw=random.randint(min,max)
+    print("user_throw",user_throw)
+    computer_choice=random.randint(min,max)
+    print("computer_throw",random.randint(min,max))
+    break
+if user_throw>computer_choice:
+    print("you won")
+elif user_throw<computer_choice:
+    print("you lost")
+else:
+    print("draw")
